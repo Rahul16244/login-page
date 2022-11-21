@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <title>login form</title>
+    <style>
+    body{
+      margin: 0;
+      padding: 0;
+      font-family: Sans-Serif;
+      background-size: cover;
+      background-color: blue;
+      background-position: center;
+    }
+    .container{
+      width: 300px;
+      height:400px;
+      background:white;
+      top: 50%;
+      left:50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      padding: 70px 20px;
+      border-radius: 30px;
+    }
+    .imglogo{
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      top: -50px;
+      left: calc(50% - 50px);
+      border-radius: 50%;
+    }
+    .container .nav h1{
+      left:calc(50% - 35px);
+      top:25px;
+      position: absolute;
+    }
+    .container input{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    .container input[type="text"], input[type="password"]{
+      height: 40px;
+      font-size: 16px;
+      border:none;
+      border-bottom: 1px solid black;
+     outline: none;
+    }
+    .container input[type="submit"]{
+      width:60%;
+      height:40px;
+      border-radius: 20px;
+      outline: none;
+      position: absolute;
+      left: calc(50% - 95px);
+    }
+    .container input[type="submit"]:hover{
+      cursor:pointer;
+      background-color: green;
+    }
+    .container .reset{
+      bottom:40%;
+      position: absolute;
+      left: calc(70% - 10px);
+    }
+    .container .reset:hover{
+      cursor: pointer;
+      color: blue;
+    }
+.container .newaccount{
+      bottom:20%;
+      position: absolute;
+    }
+    .container .newaccount:hover{
+      cursor: pointer;
+      color: blue;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <h1>Login</h1>
+      </div>
+      <div class="login">
+      <img src="istockphoto-868647084-612x612.jpg" class="imglogo">
+      <form class="loginform">
+        <input type="text" placeholder="user or email">
+        <br>
+        <input type="password" placeholder="password">
+        <br>
+        <input type="submit" placeholder="Login">
+        <br>
+        <a href=""class="reset" >forget password</a>
+        <br>
+        <a href=""class="newaccount">Sign Up</a>
+      </form>
+      </div>
+    </div>
+  </body>
+</html>
